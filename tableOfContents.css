@@ -22,12 +22,14 @@
     font-weight: 400;
 }
 
-.table-of-contents > ul > li > a:hover {
+.table-of-contents > ul > li > a:hover,
+.table-of-contents > ul > li > a.link-active {
     border-left-color: #245cc5;
     color: #245cc5;
 }
 
-.table-of-contents a:hover {
+.table-of-contents a:hover,
+.table-of-contents a.link-active {
     color: #245cc5;
 }
 
@@ -37,4 +39,9 @@
 
 .table-of-contents li>ul {
     margin-left: 20px;
+    display: none;
+}
+
+.table-of-contents a.link-active + ul {
+    display: block;
 }
