@@ -1,0 +1,40 @@
+.table-of-contents {
+    width: 270px;
+    position: fixed;
+    top: 90px;
+    left: 40px;
+}
+
+.table-of-contents a, .table-of-contents a:visited {
+    color: #212529;
+}
+
+.table-of-contents a {
+    padding: 5px 0 5px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.6;
+    display: block;
+    border-left: 2px solid transparent;
+    transition-property: color,border-left-color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    font-weight: 400;
+}
+
+.table-of-contents > ul > li > a:hover {
+    border-left-color: #245cc5;
+    color: #245cc5;
+}
+
+.table-of-contents a:hover {
+    color: #245cc5;
+}
+
+.table-of-contents ul {
+    list-style: none;
+}
+
+.table-of-contents li>ul {
+    margin-left: 20px;
+}
